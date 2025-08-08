@@ -43,7 +43,7 @@ jobs:
       uses: golangci/golangci-lint-action@v6
       with:
         version: v1.58.1
-        intall mode: binary
+        intall-mode: binary
         verify: true
   
   push:
