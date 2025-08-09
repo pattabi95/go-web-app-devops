@@ -21,10 +21,10 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Set up Go 1.22
-      uses: actions/setup-go@v2
+    - name: Set up Go 1.221.23
+      uses: actions/setup-go@v5
       with:
-        go-version: 1.22
+        go-version: 1.23
 
     - name: Build
       run: go build -o go-web-app
@@ -39,13 +39,18 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
+    - name: Set up Go 1.23
+      uses: actions/setup-go@v5
+      with:
+        go-version: 1.23
+
     - name: Check Go version
       run: go version
 
     - name: Run golangci-lint
       uses: golangci/golangci-lint-action@v6
       with:
-        version: v1.57.2
+        version: v1.64
           
   push:
     runs-on: ubuntu-latest
