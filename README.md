@@ -64,14 +64,6 @@ The primary objective is to apply DevOps practices to a basic Golang web applica
 
 ---
 
-## 📊 Deployment Flow Diagram
-
-![Deployment Flow Diagram](deployment-diagram.png)
-
-*(Diagram: Developer → GitHub Actions → Docker Hub → Argo CD → Kubernetes)*
-
----
-
 ## ⚡ Quick Start
 
 1. **Clone the repository**
